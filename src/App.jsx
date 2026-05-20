@@ -6,9 +6,7 @@ function App() {
 
   return (
     <>
-      <div className='w-full h-screen bg-gradient-to-r from-blue-500 to-black-600 flex items-center justify-center'>
-        <h1 className='text-5xl font-bold text-white'>Hello, Tailwind!</h1>
-      </div>
+      <h1 className='text-5xl font-bold underline flex pl-[50px] text-white bg-red-500'>Hello world!</h1>
     </>
   )
 }
