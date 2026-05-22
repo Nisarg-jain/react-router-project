@@ -22,6 +22,8 @@ export default function Header() {
 
         {/* Dynamic Navigation Links */}
         <nav className="hidden md:flex items-center space-x-8">
+          
+          {/* Home Link */}
           <NavLink 
             to="/" 
             className={({ isActive }) => 
@@ -31,12 +33,12 @@ export default function Header() {
             {({ isActive }) => (
               <>
                 Home
-                {/* Glowing neon underline indicator appears only when route is active */}
                 {isActive && <span className="absolute bottom-0 left-0 h-[2px] w-full bg-emerald-400 rounded-full shadow-[0_0_8px_rgba(52,211,153,0.6)]" />}
               </>
             )}
           </NavLink>
 
+          {/* About Link */}
           <NavLink 
             to="/about" 
             className={({ isActive }) => 
@@ -51,6 +53,7 @@ export default function Header() {
             )}
           </NavLink>
 
+          {/* Contact Link */}
           <NavLink 
             to="/contact" 
             className={({ isActive }) => 
@@ -65,6 +68,7 @@ export default function Header() {
             )}
           </NavLink>
 
+          {/* GitHub Link */}
           <NavLink 
             to="/github" 
             className={({ isActive }) => 
