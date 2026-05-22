@@ -25,7 +25,7 @@ export default function Github() {
             className="w-32 h-32 rounded-full border-4 border-slate-800 shadow-[0_0_20px_rgba(52,211,153,0.2)] mb-4"
           />
 
-          {/* Profile Name Container */}
+          {/* Profile Name */}
           <h1 className="text-3xl font-extrabold tracking-tight text-white mb-1">
             {data.name || "Nisarg Jain"}
           </h1>
@@ -49,6 +49,19 @@ export default function Github() {
               <span className="text-white font-bold text-lg">{data.following}</span>
               <span className="uppercase tracking-wider text-xs mt-1">Following</span>
             </div>
+          </div>
+
+          {/* Premium Interactive LinkedIn Button */}
+          <div className="w-full max-w-sm mt-8 pt-6 border-t border-slate-800/60">
+            <a 
+              href="https://www.linkedin.com/in/nisarg-jain0/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-blue-600 hover:bg-blue-500 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_0_15px_rgba(37,99,235,0.15)] hover:shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all duration-200 group/btn"
+            >
+              <span>Connect on LinkedIn</span>
+              <span className="transform group-hover/btn:translate-x-1 transition-transform duration-200">→</span>
+            </a>
           </div>
 
         </div>

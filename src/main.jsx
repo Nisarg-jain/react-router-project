@@ -13,7 +13,7 @@ import Contact from './components/contacts/contact.jsx'
 import User from './components/user/user.jsx'
 
 // 1. Fixed the Github import to include the Loader function!
-import Github, { githubInfoLoader } from './components/github/github.jsx'
+import Github, { githubInfoLoader } from './components/Github/github.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
